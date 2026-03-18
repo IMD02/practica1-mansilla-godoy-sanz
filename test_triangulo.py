@@ -15,3 +15,18 @@ def test_case4_no_triangulo():
 
 def test_case5_no_triangulo():
     assert checktriangle(8, 2, 4) == "No es un triangulo"
+
+def test_case6_isosceles_ac():
+    assert checktriangle(3, 4, 3) == "Triangulo isosceles"
+
+def test_case7_limite_no_triangulo():
+    assert checktriangle(2, 3, 5) == "No es un triangulo"
+
+def test_case8_limite_no_triangulo():
+    assert checktriangle(5, 2, 3) == "No es un triangulo"
+
+def test_case9_cero():
+    assert checktriangle(0, 0, 0) == "No es un triangulo"
+
+def test_case10_negativos():
+    assert checktriangle(-6, -2, -4) == "No es un triangulo"
